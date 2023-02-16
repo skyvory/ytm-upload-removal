@@ -1,11 +1,11 @@
 var song = document.body.querySelectorAll(".dropdown-trigger.ytmusic-menu-renderer");
 
-while (song.length > 0) {
+while (song.length > 0 && song != undefined) {
 	
 	for (var i = 0; song.length; i++) {
 		console.log(song[i]);
 		if(song[i] == undefined) {
-			continue; 
+			break; 
 		}
 		song[i].click();
 		var dropdown = document.body.querySelector("ytmusic-menu-popup-renderer[slot='dropdown-content']");
