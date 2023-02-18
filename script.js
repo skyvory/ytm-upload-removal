@@ -56,7 +56,7 @@ while (song.length > 0 && song != undefined) {
 					var finalthing = deletedia.querySelector("div.yt-spec-button-shape-next--button-text-content").querySelector("span.yt-core-attributed-string");
 					if (finalthing.innerHTML == 'Delete' && deletedia != undefined) {
 						deletedia.click();
-						console.log("Album Deleted");
+						console.log("Song/Album Deleted!");
 						// Auto scroll just for convenience. Still need to run the whole script again later, because the cript will stop at the last position at the time the script was executed.
 						window.scrollTo(0, document.body.scrollHeight);
 						await new Promise(r => setTimeout(r, 1000));
