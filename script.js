@@ -64,6 +64,7 @@ while (song.length > 0 && song != undefined) {
 				}
 			}
 		}
+		console.log(document.body.querySelectorAll(".dropdown-trigger.ytmusic-menu-renderer").length + " left");
 	}
 	song = document.body.querySelectorAll(".dropdown-trigger.ytmusic-menu-renderer");
 }
